@@ -1,8 +1,41 @@
-{% extends 'index.html' %}
+{% extends 'index.html' %} {% block title %}Steganalysis{% endblock title %}
+{%block body %}
+<div class="container">
+  <div class="row mt-2" style="border: 1px solid">
+    <div class="col mt-2">
+      <div class="mb-3">
+        <label for="formFile" class="form-label"> Select The image</label>
+        <input class="form-control" type="file" id="formFile" />
+      </div>
+      <div class="mb-3">
+        <label for="formFile" class="form-label">Select The image</label>
+        <input class="form-control" type="file" id="formFile1" />
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4" style="border: 1px solid">
+    <div class="col">
+      <div class="card" style="height: 25rem">
+        <div class="card-body">
+          <figure class="figure">
+            <img
+              src=""
+              class="figure-img img-fluid rounded"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="col">2 of 3</div>
+  </div>
 
+  <!--    footer-->
+  <div class="row mt-4" style="border: 1px solid">
+    <div class="col">1 of 3</div>
+  </div>
+</div>
 
-{% block title %}Steganalysis{% endblock title %}
-
-{% block body %}
-<h1>Steganalysis works!!! </h1>
 {% endblock body %}
