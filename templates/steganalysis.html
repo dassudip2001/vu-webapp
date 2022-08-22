@@ -1,19 +1,30 @@
 {% extends 'index.html' %} {% block title %}Steganalysis{% endblock title %}
 {%block body %}
 <div class="container-fluid">
-  <div class="row mt-2" style="border: 1px solid">
+  <div class="row mt-2">
     <div class="col mt-2">
-      <div class="mb-3">
-        <label for="formFile" class="form-label"> Select The image</label>
-        <input class="form-control" type="file" id="formFile" />
-      </div>
-      <div class="mb-3">
-        <label for="formFile" class="form-label">Select The image</label>
-        <input class="form-control" type="file" id="formFile1" />
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <div class="mb-3">
+            <label for="formFile" class="form-label"> Select a image</label>
+            <input
+              class="form-control"
+              type="file"
+              id="file-selector"
+              accept="image/jpeg ,image/png, image/jpg"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Select a image</label>
+            <input class="form-control" type="file" id="formFile1" />
+          </div>
+        </div>
+        <div class="col"></div>
       </div>
     </div>
   </div>
-  <div class="row mt-4" style="border: 1px solid">
+  <div class="row mt-4">
     <div class="col">
       <div class="card" style="height: 25rem">
         <div class="card-body">
@@ -29,9 +40,24 @@
         </div>
       </div>
     </div>
-    <div class="col">2 of 3</div>
+    <div class="col">
+      <div class="card" style="height: 25rem">
+        <div class="card-body">
+          <figure class="figure">
+            <output id="output"></output>
+            <img
+              src=""
+              class="figure-img img-fluid rounded"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </figure>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="row mt-4 row-cols-9" style="border: 1px solid">
+  <div class="row mt-4 row-cols-9">
     <div class="col">
       <input
         class="form-check-input"
@@ -39,7 +65,7 @@
         value=""
         aria-label="..."
       />
-      Select
+      Select/unselect
     </div>
     <div class="col">
       <input
@@ -116,7 +142,7 @@
   </div>
 
   <!-- input -->
-  <div class="row mt-4 row-cols-9" style="border: 1px solid">
+  <div class="row mt-4 row-cols-9">
     <div class="col"></div>
     <div class="col">
       <div class="mb-3">
@@ -201,7 +227,7 @@
   </div>
 
   <!-- input and checkbox -->
-  <div class="row mt-4 row-cols-9" style="border: 1px solid">
+  <div class="row mt-4 row-cols-9">
     <div class="col"></div>
     <div class="col">
       <div class="mb-3">
@@ -233,7 +259,7 @@
         value=""
         aria-label="..."
       />
-      PSNR
+      Histogram
     </div>
     <div class="col"></div>
     <div class="col">
@@ -248,17 +274,29 @@
     </div>
   </div>
   <!--    Button and Settings-->
-  <div class="row mt-4 row-cols-9" style="border: 1px solid">
+  <div class="row mt-4 row-cols-9">
     <div class="col"></div>
     <div class="col"></div>
     <div class="col"></div>
     <div class="col"></div>
     <div class="col">
-      <button type="button" class="btn btn-success btn-lg">Process</button>
+      <button
+        data-mdb-ripple-color="success"
+        type="button"
+        class="btn btn-success btn-lg"
+      >
+        Process
+      </button>
     </div>
     <div class="col"></div>
     <div class="col">
-      <button type="settings" class="btn btn-light">Settings</button>
+      <button
+        data-mdb-ripple-color="success"
+        type="button"
+        class="btn btn-light"
+      >
+        Settings
+      </button>
     </div>
     <div class="col"></div>
     <div class="col"></div>

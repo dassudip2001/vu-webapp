@@ -12,16 +12,26 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!--font-->
+    <!--mdb-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css"
+      rel="stylesheet"
+    />
 
     <!-- add  style.css file -->
     {% load static %}
-
+<!--custom css file-->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<!--    custom js file-->
+    <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+
     <title>{% block title %}{% endblock title %} | Image Transformation</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #e3f2fd"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="/">VU WebApp</a>
         <button
