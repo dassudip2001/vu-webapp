@@ -1,6 +1,6 @@
 {% extends 'index.html' %} {% block title %}Steganalysis{% endblock title %}
 {%block body %}
-<div class="container">
+<div class="container-fluid">
   <div class="row mt-2" style="border: 1px solid">
     <div class="col mt-2">
       <div class="mb-3">
@@ -31,11 +31,240 @@
     </div>
     <div class="col">2 of 3</div>
   </div>
+  <div class="row mt-4 row-cols-9" style="border: 1px solid">
+    <div class="col">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        aria-label="..."
+      />
+      Select
+    </div>
+    <div class="col">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        aria-label="..."
+      />
+      PSNR
+    </div>
+    <div class="col">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        aria-label="..."
+      />
+      BER
+    </div>
+    <div class="col">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        aria-label="..."
+      />
+      NCC
+    </div>
+    <div class="col">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        aria-label="..."
+      />
+      SD-CC
+    </div>
+    <div class="col">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        aria-label="..."
+      />
+      Q-index
+    </div>
+    <div class="col">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        aria-label="..."
+      />
+      ChiSquare
+    </div>
+    <div class="col">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        aria-label="..."
+      />
+      SSIM
+    </div>
+    <div class="col">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        aria-label="..."
+      />
+      RS Analysis
+    </div>
+  </div>
 
-  <!--    footer-->
-  <div class="row mt-4" style="border: 1px solid">
-    <div class="col">1 of 3</div>
+  <!-- input -->
+  <div class="row mt-4 row-cols-9" style="border: 1px solid">
+    <div class="col"></div>
+    <div class="col">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="0.00"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="0.00"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="0.00"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="0.00"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="0.00"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="0.00"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="0.00"
+        />
+      </div>
+    </div>
+    <div class="col">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="0.00"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- input and checkbox -->
+  <div class="row mt-4 row-cols-9" style="border: 1px solid">
+    <div class="col"></div>
+    <div class="col">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="0.00"
+        />
+      </div>
+    </div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="0.00"
+        />
+      </div>
+    </div>
+    <div class="col"></div>
+    <div class="col">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        value=""
+        aria-label="..."
+      />
+      PSNR
+    </div>
+    <div class="col"></div>
+    <div class="col">
+      <div class="mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="0.00"
+        />
+      </div>
+    </div>
+  </div>
+  <!--    Button and Settings-->
+  <div class="row mt-4 row-cols-9" style="border: 1px solid">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col">
+      <button type="button" class="btn btn-success btn-lg">Process</button>
+    </div>
+    <div class="col"></div>
+    <div class="col">
+      <button type="settings" class="btn btn-light">Settings</button>
+    </div>
+    <div class="col"></div>
+    <div class="col"></div>
   </div>
 </div>
+
+<!--  -->
 
 {% endblock body %}
