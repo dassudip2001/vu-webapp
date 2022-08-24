@@ -116,3 +116,67 @@
         margin-bottom: 20px;
     }
 }
+
+
+
+/* steganalysis */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    /* grid-auto-rows: 100%; */
+}
+
+.one {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+}
+
+.two {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+}
+
+.three {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+.four {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+.five {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+.six {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+.seven {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+.eight {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+.nine {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+}

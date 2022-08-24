@@ -1,6 +1,7 @@
+version: '3'
 services:
-  ml:
+  ml_model:
    build: .
-   restart: always 
+    
    ports:
       - 8000:8080
