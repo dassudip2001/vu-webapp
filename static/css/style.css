@@ -29,7 +29,7 @@
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1120px) {
 
     .row {
         flex-direction: column;
@@ -243,8 +243,6 @@
     height: 100%;
     /* border: 1px solid; */
 }
-a{background-color: #e3f2fd;
-}
 a:hover {
-    background-color: rgb(168, 215, 227);
+    color: rgb(237, 30, 30);
 }

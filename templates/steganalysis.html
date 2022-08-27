@@ -17,7 +17,11 @@
           </div>
           <div class="mb-3">
             <label for="formFile" class="form-label">Select a image</label>
-            <input class="form-control" type="file" id="formFile1" />
+            <input
+              type="file"
+              id="image-input"
+              accept="image/jpeg, image/png, image/jpg"
+            />
           </div>
         </div>
         <div class="col"></div>
@@ -27,16 +31,19 @@
   <div class="row mt-4">
     <div class="col">
       <div class="card" style="height: 25rem">
-        <div class="card-body">
-          <figure class="figure">
-            <img
-              src=""
-              class="figure-img img-fluid rounded"
-              alt=""
-              height="100%"
-              width="100%"
-            />
-          </figure>
+        <div class="overflow-auto">
+          <div class="card-body">
+            <figure class="figure">
+              <img
+                id="img"
+                src=""
+                class="figure-img img-fluid rounded"
+                alt=""
+                height="100%"
+                width="100%"
+              />
+            </figure>
+          </div>
         </div>
       </div>
     </div>
@@ -44,8 +51,9 @@
       <div class="card" style="height: 25rem">
         <div class="card-body">
           <figure class="figure">
-            <output id="output"></output>
+            <!-- <output id="output"></output> -->
             <img
+              id="img1"
               src=""
               class="figure-img img-fluid rounded"
               alt=""
