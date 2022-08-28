@@ -2,8 +2,15 @@
     min-width: 250px;
 } */
 
+
 * {
     box-sizing: border-box;
+           
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
 }
 
 /* Container for flexboxes */
@@ -244,5 +251,5 @@
     /* border: 1px solid; */
 }
 a:hover {
-    color: rgb(237, 30, 30);
+    background-color: yellow;
 }
