@@ -250,6 +250,6 @@ body{
     height: 100%;
     /* border: 1px solid; */
 }
-a:hover {
-    background-color: yellow;
+ a:hover  {
+    color: red;
 }
