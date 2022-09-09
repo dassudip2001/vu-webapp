@@ -13,45 +13,43 @@ window.addEventListener("load", function () {
       }
     });
 });
-// window.onload = function () {
-//   var fileUpload = document.getElementsByClassName("fileupload");
+window.onload = function () {
+  var fileUpload = document.getElementsByClassName("fileupload");
 
-//   for (var i = 0; i < fileUpload.length; i++) {
-//     fileUpload[i].onchange = showImgOnChange;
-//   }
-// };
+  for (var i = 0; i < fileUpload.length; i++) {
+    fileUpload[i].onchange = showImgOnChange;
+  }
+};
 
-// var showImgOnChange = function () {
-//   if (typeof FileReader != "undefined") {
-//     var dvPreview = this.nextElementSibling;
+var showImgOnChange = function () {
+  if (typeof FileReader != "undefined") {
+    var dvPreview = this.nextElementSibling;
 
-//     dvPreview.innerHTML = "";
-//     var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+    dvPreview.innerHTML = "";
+    var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
 
-//     for (var i = 0; i < this.files.length; i++) {
-//       var file = this.files[i];
-//       // if (regex.test(file.name.toLowerCase())) {
-//       //   var reader = new FileReader();
-//       //   reader.onload = function (e) {
-//       //     var img = document.createElement("IMG");
+    for (var i = 0; i < this.files.length; i++) {
+      var file = this.files[i];
+      if (regex.test(file.name.toLowerCase())) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          var img = document.createElement("IMG");
 
-//       //     img.height = "300";
-//       //     img.width = "1000";
-//       //     img.src = e.target.result;
-//       //     dvPreview.appendChild(img);
-//       //     // dvPreview.appendChild(textbox);
-//       //     console.log(img.src);
-//       //   };
-//       reader.readAsDataURL(file);
-//     }
-//     // else {
-//     //   alert(file.name + " is not a valid image file.");
-//     //   dvPreview.innerHTML = "";
-//     //   return false;
-//     // }
-//   }
-// };
-// //   else {
-// //     alert("This browser does not support HTML5 FileReader.");
-// //   // }
-// // };
+          img.height = "200";
+          img.width = "400";
+          img.src = e.target.result;
+          dvPreview.appendChild(img);
+          // dvPreview.appendChild(textbox);
+          console.log(img.src);
+        };
+        reader.readAsDataURL(file);
+      } else {
+        alert(file.name + " is not a valid image file.");
+        dvPreview.innerHTML = "";
+        return false;
+      }
+    }
+  } else {
+    alert("This browser does not support HTML5 FileReader.");
+  }
+};

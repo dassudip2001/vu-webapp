@@ -7,69 +7,19 @@
         <div class="col"></div>
         <div class="col">
           <div class="mb-3">
-            <label for="formFile" class="form-label"> Select a image</label>
-            <input
-              class="form-control"
-              type="file"
-              id="file-selector"
-              accept="image/jpeg ,image/png, image/jpg"
-            />
+            <input class="fileupload" type="file" name="img_capa" multiple />
+            <div id="dvPreview2"></div>
           </div>
           <div class="mb-3">
-            <label for="formFile" class="form-label">Select a image</label>
-            <input
-              class="form-control"
-              type="file"
-              id="file-selector"
-              accept="image/jpeg ,image/png, image/jpg"
-            />
+            <input class="fileupload" type="file" name="img_capa" multiple />
+            <div id="dvPreview1" class="height:2rem"></div>
           </div>
         </div>
         <div class="col"></div>
       </div>
     </div>
   </div>
-  <div class="row mt-4">
-    <div class="col">
-      <div class="card" style="height: 25rem">
-        <div class="overflow-auto">
-          <div class="card-body">
-            <figure class="figure">
-              <img
-                id="IMG"
-                src=""
-                class="figure-img img-fluid rounded"
-                alt=""
-                height="100%"
-                width="100%"
-              />
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" style="height: 25rem">
-        <div class="card-body">
-          <figure class="figure">
-            <img
-              id="dvPreview2"
-              src=""
-              class="figure-img img-fluid rounded"
-              alt=""
-              height="100%"
-              width="100%"
-            />
 
-            {% comment %}
-            <input class="fileupload" type="file" name="img_capa" multiple />
-            <div id="dvPreview2"></div>
-            {% endcomment %}
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="container-fluid mt-4">
     <div class="wrapper">
       <div class="one">
