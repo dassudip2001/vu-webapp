@@ -4,6 +4,8 @@
 
 
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
            
 }
@@ -32,9 +34,12 @@ body{
     width: 100%;
 } */
 #pic {
-    height: 45rem;
+    height: 30rem;
 }
-
+hr{
+    padding: 0px;
+    margin: 0px;
+}
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 1120px) {
 

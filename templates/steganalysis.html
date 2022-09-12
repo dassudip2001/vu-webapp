@@ -5,12 +5,15 @@
     <div class="row">
       <div class="col">
         <div class="card">
-          <div class="card-body">
+          <div class="overflow-auto">
+            <div class="card-body">
             <div class="mb-3">
               <input class="fileupload form-control mt-1" type="file" name="img_capa" multiple />
-              <div id="dvPreview2"></div>
+              <figure class="figure" id="dvPreview2"></figure>
             </div>
           </div>
+          </div>
+          
         </div>
       </div>
       <div class="col ">
@@ -18,7 +21,8 @@
           <div class="card-body">
             <div class="mb-3">
           <input class="fileupload form-control mt-1" type="file" name="img_capa" multiple />
-          <div id="dvPreview1" class="height:2rem"></div>
+          <figure class="figure" id="dvPreview1"></figure>
+          <!-- <div id="dvPreview1" class="height:2rem"></div> -->
         </div>
           </div>
         </div>
@@ -314,6 +318,6 @@
   </div>
 </div>
 
-<!--  -->
+
 
 {% endblock body %}
