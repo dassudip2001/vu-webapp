@@ -12,21 +12,20 @@
               <figure class="figure" id="dvPreview2"></figure>
             </div>
           </div>
-          </div>
-          
+          </div>         
         </div>
       </div>
       <div class="col ">
         <div class="card">
-          <div class="card-body">
+          <div class="overflow-auto">
+             <div class="card-body">
             <div class="mb-3">
           <input class="fileupload form-control mt-1" type="file" name="img_capa" multiple />
-          <figure class="figure" id="dvPreview1"></figure>
-          <!-- <div id="dvPreview1" class="height:2rem"></div> -->
-        </div>
-          </div>
-        </div>
-        
+          <figure class="figure" id="dvPreview1">
+          </figure>          
+           </div>
+          </div></div>         
+        </div>       
       </div>
       </div>
     </div>
@@ -37,13 +36,8 @@
       <div class="one">
         <div class="row">
           <div class="col">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              aria-label="..."
-            />
-            Select/unselect
+            <input type="button" onclick='selects()' value="Select"/>  
+            <input type="button" onclick='deSelect()' value="Deselect"/>  
           </div>
         </div>
       </div>
@@ -53,6 +47,7 @@
             <input
               class="form-check-input"
               type="checkbox"
+              name="chk"
               value=""
               aria-label="..."
             />
@@ -92,6 +87,7 @@
               class="form-check-input"
               type="checkbox"
               value=""
+              name="chk"
               aria-label="..."
             />
             BER
@@ -117,6 +113,7 @@
               class="form-check-input"
               type="checkbox"
               value=""
+              name="chk"
               aria-label="..."
             />
             NCC
@@ -141,6 +138,7 @@
             <input
               class="form-check-input"
               type="checkbox"
+              name="chk"
               value=""
               aria-label="..."
             />
@@ -182,6 +180,7 @@
               class="form-check-input"
               type="checkbox"
               value=""
+              name="chk"
               aria-label="..."
             />
             Q-index
@@ -207,6 +206,7 @@
               class="form-check-input"
               type="checkbox"
               value=""
+              name="chk"
               aria-label="..."
             />
             ChiSquare
@@ -230,6 +230,7 @@
               class="form-check-input"
               type="checkbox"
               value=""
+              name="chk"
               aria-label="..."
             />
             Histogram
@@ -254,6 +255,7 @@
               class="form-check-input"
               type="checkbox"
               value=""
+              name="chk"
               aria-label="..."
             />
             SSIM
@@ -279,6 +281,7 @@
               class="form-check-input"
               type="checkbox"
               value=""
+              name="chk"
               aria-label="..."
             />
             RS Analysis
@@ -318,6 +321,8 @@
   </div>
 </div>
 
-
+     <!-- <input type="button" onclick='selects()' value="Select All"/>  
+     <input type="button" onclick='deSelect()' value="Deselect All"/>   -->
+     
 
 {% endblock body %}
