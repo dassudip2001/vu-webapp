@@ -253,3 +253,12 @@ body{
 a:hover {
     background-color: rgb(153, 233, 131);
   }
+  body {
+    background-color: #ebf5e6;
+} 
+card{
+    background-color: #ebf5e6;
+}
+card-body{
+    background-color: #ebf5e6;
+}
