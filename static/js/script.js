@@ -1,3 +1,4 @@
+// signal image upload
 window.addEventListener("load", function () {
   document
     .querySelector('input[type="file"]')
@@ -13,6 +14,7 @@ window.addEventListener("load", function () {
       }
     });
 });
+// multiple image upload
 window.onload = function () {
   var fileUpload = document.getElementsByClassName("fileupload");
 

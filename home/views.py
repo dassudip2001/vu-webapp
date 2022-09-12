@@ -13,3 +13,6 @@ def home(request):
 # steganalysis
 def steganalysis(request):
     return render(request, 'steganalysis.html')
+
+def about(request):
+    return render(request, 'about.html')    
