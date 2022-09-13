@@ -257,7 +257,15 @@ hr{
 }
 a:hover {
     background-color: rgb(153, 233, 131);
+    width: 30px;
+
   }
+  /* a:checked{
+    color: red;
+ } */
+ /* .navbar-nav > .active > a { 
+    background-color: rgb(red, green, blue) ; 
+} */
   body {
     background-color: #ebf5e6;
 } 
